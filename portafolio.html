@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Juan David Roncancio</title> 
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/portafolio.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-parallax">
+        <div class="header-content text-white text-center py-12">
+            <!-- Botón Modo Oscuro -->
+            <button id="themeToggle" class="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+          
+            <div class="flex items-center justify-center space-x-3">
+                <h1 class="text-5xl font-bold"><span>Juan David Roncancio</span></h1> 
+                <img src="images/perfil.jpeg"  alt="Foto de perfil de Juan David Roncancio" class="w-40 h-40 rounded object-cover">   
+            </div>
+            <h2 class="text-2xl mt-3">Ingeniero de Software</h2>
+            <a href="index.html" target="_blank" class="text-blue-400 transition-colors duration-300"><i class="fab fa-volver al CV mr-2"></i>><i class="fas fa-arrow-left mr-2"></i>Volver al CV</a> 
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto p-8">
+        <!-- Sobre Mí -->
+        <section class="card-section mb-12" data-aos="fade-up">
+            <h3 class="section-title"><i class="fas fa-user mr-3"></i>Sobre Mí</h3>
+            <p class="mt-4 text-gray-700">
+                Estudiante de ingeniería de software en la Universidad Manuela Beltrán, cursando el 10° semestre de la carrera.
+                Apasionado por el desarrollo de soluciones tecnológicas, con un enfoque en la gestión de datos, 
+                desarrollo web y análisis de negocio.
+            </p>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="section-title"><i class="fas fa-tools mr-3"></i>Habilidades</h3>
+            <ul class="mt-4 list-none">
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Desarrollo en Java: Creación de aplicaciones robustas y escalables.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>JavaScript: Desarrollo de interfaces dinámicas y funcionales con frameworks como React.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Gestión de bases de datos con MySQL: Diseño, implementación y optimización de bases de datos relacionales.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Business Intelligence (BI): Análisis de datos y creación de reportes con herramientas como Power BI.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Metodologías ágiles: Experiencia en Scrum para la gestión de proyectos de software.</li>
+                <li class="flex items-center mb-3"><i class="fas fa-check-circle text-teal-500 mr-2"></i>Comprensión en redes y protocolos tecnológicos.</li>
+            </ul>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="card-section mb-12" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="section-title"><i class="fas fa-project-diagram mr-3"></i>Proyectos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <!-- Proyecto 1: Java -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Sistema de Gestión de Bibliotecas en Java</h4>
+                    <p class="text-gray-700 mt-2">
+                        Desarrollé una aplicación de escritorio para gestionar una biblioteca, permitiendo registrar libros, usuarios y préstamos. Implementé una arquitectura MVC para un código organizado y mantenible.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> Java, JavaScript</p>
+
+                </div>
+                <!-- Proyecto 2: JavaScript -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Aplicación de sistema transaccional</h4>
+                    <p class="text-gray-700 mt-2">
+                        Creé una aplicación web para gestionar un sistema de ventas ecommerce de sitemas transaccionales.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> JavaScript, java, python, Mysql DB</p>
+                </div>
+                <!-- Proyecto 3: MySQL -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Sistema de Gestión de Inventarios</h4>
+                    <p class="text-gray-700 mt-2">
+                        Diseñé e implementé un sistema de inventarios con MySQL DB, incluyendo la creación de tablas, sistema de base de datos relacionales en Mysql.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> MySQL, Apache, php</p> 
+                </div>
+                <!-- Proyecto 4: BI -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h4 class="text-lg font-medium text-gray-800">Dashboard de Ventas con Power BI</h4>
+                    <p class="text-gray-700 mt-2">
+                        Desarrollé un dashboard interactivo para analizar datos de ventas de una empresa ficticia. Importé datos desde MySQL, creé visualizaciones y generé reportes para la toma de decisiones.
+                    </p>
+                    <p class="text-gray-600 mt-2"><strong>Tecnologías:</strong> BI, MySQL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-6">
+        <div class="flex flex-col items-center space-y-3">
+            <div class="flex items-center space-x-4">
+                <img src="images/java.png" alt="Foto del perfil" class="w-40 h-40 rounded object-cover">
+                
+            </div>
+            <p>© 2025 Juan David Roncancio. Portafolio, 2025.</p>
+            <div class="flex space-x-4">
+                <a href="index.html" class="transition-colors duration-300"><i class="fas fa-file-alt mr-2"></i>CV</a>
+                <a href="https://www.linkedin.com/in/juan-roncancio-1769a6248/" target="_blank" class="transition-colors duration-300"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                <a href="https://github.com/desarrollo-web-1/mi-repositorio" target="_blank" class="transition-colors duration-300"><i class="fab fa-github mr-2"></i>GitHub</a> 
+                <a href="https://www.instagram.com/david_cullen28/?igsh=dXk4cTlzb2JkcWpo" target="_blank" class="transition-colors duration-300"><i class="fab fa-instagram mr-2"></i>Instagram</a>  
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
+  
+ 
+
+
+
+
+
+
+
+ 
